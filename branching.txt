@@ -1,0 +1,60 @@
+git branch
+
+# create new branch:
+git branch <branch_name>
+
+# to switch to another branch:
+git checkout <branch_name>
+
+# check which branch r u now:
+git branch
+
+# to delete a branch, first switch to another branch and then delete
+git branch -d <branch_name>
+
+# create a new branch and switch to it:
+git checkout -b <branch_name>
+
+# push code to other branch except main: if it's main give main in branch name
+git add .
+git commit -m"description"
+git push origin <branch_name>
+
+# Opensource Contribution:
+- find a repo of other's
+- fork it ( the repo will now in your profile )
+- clone it
+- open vs code and create a new branch
+- add a new feature or update existing file in that branch
+- git add .
+  git commit -am" "  (if you update existing file of the author)
+  git push origin <branch_name>
+- pull request: sub-branch ke main branch a niye aste use hoi
+
+# how to pull request and merge:
+- select button compare and pull request (as a contributor)
+- author will receive a new pull request notification. if 
+  github says, there's no conflict, author can merge and the
+  code added in main branch of the author
+- 2 commits behind: when it shows in your forked repo then,
+  sync fork (click it)
+- git pull: now in your vs code, you can go to main branch and then
+  git pull ( main branch will be updated in your vs code/ get the latest github commit in your vs code )
+
+# git conflict:
+when author and other contributor changing the same file on same time.
+
+# some git command:
+  git log  (show latest commit)
+  git log --oneline (show all commit)
+  git reset 6b7df54 --hard    (go to a specific github commit from past in your vs code, it will not change anything in github)
+  git pull  ( if needed, if you again want the latest github commit code's in vs code )  
+  git push -f  ( force update in github repo, it will delete commit in github )
+
+  git revert <id>    ( go to a prevous commit and u can update that commit, u may face merge conflict )
+
+# edit last commit messaage:
+  git commit --amend
+  git push --force
+
+#
