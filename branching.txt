@@ -9,7 +9,7 @@ git checkout <branch_name>
 # check which branch r u now:
 git branch
 
-# to delete a branch, first switch to another branch and then delete
+# to delete a branch, first switch to that branch and then delete
 git branch -d <branch_name>
 
 # create a new branch and switch to it:
@@ -19,17 +19,6 @@ git checkout -b <branch_name>
 git add .
 git commit -m"description"
 git push origin <branch_name>
-
-# Opensource Contribution:
-- find a repo of other's
-- fork it ( the repo will now in your profile )
-- clone it
-- open vs code and create a new branch
-- add a new feature or update existing file in that branch
-- git add .
-  git commit -am" "  (if you update existing file of the author)
-  git push origin <branch_name>
-- pull request: sub-branch ke main branch a niye aste use hoi
 
 # how to pull request and merge:
 - select button compare and pull request (as a contributor)
@@ -44,7 +33,7 @@ git push origin <branch_name>
 # git conflict:
 when author and other contributor changing the same file on same time.
 
-# some git command:
+# some useful git command:
   git log  (show latest commit)
   git log --oneline (show all commit)
   git reset 6b7df54 --hard    (go to a specific github commit from past in your vs code, it will not change anything in github)
@@ -57,4 +46,13 @@ when author and other contributor changing the same file on same time.
   git commit --amend
   git push --force
 
-#
+# Opensource Contribution:
+- find a repo of other's
+- fork it ( the repo will now in your profile )
+- clone it
+- open vs code and create a new branch
+- add a new feature or update existing file in that branch
+- git add .
+  git commit -am" "  (if you update existing file of the author)
+  git push origin <branch_name>
+- pull request: sub-branch ke main branch a niye aste use hoi
